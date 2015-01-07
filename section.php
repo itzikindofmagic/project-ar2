@@ -35,11 +35,6 @@
 			); ?>
 			<?php edit_post_link( __( 'Edit', 'ar2' ) ) ?>
 		</div>
-		<?php else : ?>
-		<div class="entry-author">
-			<?php printf( __( 'Posted %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
-			<?php edit_post_link( __( 'Edit', 'ar2' ) ) ?>
-		</div>
 		<?php endif ?>
 		
 		<?php if ( ar2_get_theme_option( 'post_display[excerpt]' ) && has_excerpt() ) : ?>
