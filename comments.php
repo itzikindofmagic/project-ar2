@@ -41,8 +41,7 @@ if ( have_comments() ) :
 	<?php endif; ?>
 	
 <?php elseif ( !comments_open()  && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-	<h3><?php _e( 'Comments Closed', 'ar2' ) ?></h3>
-	<p class="nocomments"><?php _e( 'Comments are closed. You will not be able to post a comment in this post.', 'ar2' ) ?></p>
+	<?php //do nothing ; ?>
 <?php endif ?>
 
 </div><!-- #comments -->
