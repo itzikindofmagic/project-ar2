@@ -53,6 +53,9 @@ if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comm
 
 <header id="header" role="banner" class="clearfix">
 	<div id="branding" class="clearfix">
+
+		<a href="<?php echo home_url(); ?>"><span id="header-link-overlay"></span></a>
+		
 		<?php if ( is_home() || is_front_page() ) : ?>
 		<hgroup class="logo">
 			<h1 class="blog-name"><a href="<?php echo home_url() ?>"><?php bloginfo('name'); ?></a></h1>
